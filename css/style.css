@@ -1,0 +1,121 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ------------------------------ HEADER ------------------------------ */
+.header{
+    padding:0.8rem 0;
+}
+.headerSec-item{
+    width: 60%;
+    line-height: 3.5vh;
+    padding: 0.1rem 0.5rem;
+}
+header nav a{
+    margin: auto 0.5rem;
+}
+.logo,
+.login{
+    width: 20%;
+}
+.login{
+    text-align: end;
+}
+
+.intro > section{
+    height: 35.5vh;
+    width: 45%;
+}
+
+/* ------------------------------ MAIN ------------------------------ */
+main article *{
+    height: 45vh;
+}
+.img{
+    width: 65%;
+}
+.textSec{
+    width: 35%;
+}
+
+
+/* ------------------------------ CLASSES ------------------------------ */
+/* flex */
+.flex{
+    display: flex;
+}
+.flex-row{
+    flex-direction: row;
+}
+.flex-rowrev{
+    flex-direction: row-reverse;
+}
+.flex-col{
+    flex-direction: column;
+}
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+.marginAuto{
+    margin: auto;
+}
+
+.container{
+    width:60%;
+}
+
+.padding-tb2-5{
+    padding: 2.5rem 0;
+}
+
+.border{
+    border: 2px dashed;
+}
+
+/* colori da cancellare */
+.blue{
+    background-color: #00008b;
+}
+.lightblue{
+    background-color: #add8e6;
+}
+.lightpink{
+    background-color: #ffc0cb;
+}
+.orange{
+    background-color: #daa520;
+}
+.lightblue2{
+    background-color: #1e90ff;
+}
+.white{
+    background-color: white;
+}
+.dark{
+    background-color: #23272a;
+}
+.green{
+    background-color: #228b22;
+}
+.lightgray{
+    background-color: #d3d3d3;
+}
+.pink{
+    background-color: #ee82ee;
+}
+.darkpink{
+    background-color: #f08080;
+}
+.darkcyan{
+    background-color: #20b2aa;
+}
+.aquamarine{
+    background-color: #7fffd4;
+}
