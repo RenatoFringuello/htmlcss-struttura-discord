@@ -11,54 +11,107 @@ hr{
     margin: 1rem 0;
     border:1px solid white;
 }
+a{
+    text-decoration: none;
+    color:white;
+}
+a:hover{
+    color:#eee;
+}
+
 
 /* ------------------------------ HEADER ------------------------------ */
+header{
+    color:white;
+    background: url("../img/jumbo.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 .header{
     padding:0.8rem 0;
+    font-size: 0.8rem;
 }
 .headerSec-item{
-    width: 60%;
-    line-height: 3.5vh;
+    flex-basis: 70%;
     padding: 0.1rem 0.5rem;
 }
-header nav a{
-    margin: auto 0.5rem;
+.headerSec-item:not(nav){
+    flex-basis: 15%;
 }
-.logo,
-.login{
-    width: 20%;
+nav a{
+    margin: auto 1rem;
+    text-align: center;
 }
 .login{
     text-align: end;
 }
-
 .intro > section{
-    height: 35.5vh;
-    width: 45%;
+    width: 38rem;
+    text-align: center;
+}
+.intro p.desc{
+    margin: 2rem 0 0;
 }
 
 /* ------------------------------ MAIN ------------------------------ */
-main article *{
-    height: 45vh;
+main > section,
+.intro{
+    padding: 5rem 0 8rem;
 }
-.img{
-    width: 65%;
+main > section:last-child{
+    text-align: center;
+}
+main > section:last-child .desc{
+    width: 80%;
+    margin: 1.5rem auto;
+}
+
+.imgSec{
+    width: 71%;
+    text-align: center;
+}
+.imgSec img{
+    width: 33rem;
 }
 .textSec{
-    width: 35%;
+    width: 29%;
+    padding-top: 1.5rem;
+}
+.textSec .title{
+    font-size: 2.5rem;
+}
+
+section.button-container h2{
+    padding-top: 1rem;
+    background:url('../img/stars.svg') no-repeat center;
+    background-size: contain;
 }
 
 /* ------------------------------ FOOTER ------------------------------ */
-footer section{
-    margin: 0.5rem 0 2rem;
+footer{
+    padding: 5rem 0;
 }
 
 .card{
     height:50vh;
     width: 20%;
 }
-footer :first-child :first-child{
+footer .head{
     width: 30%;
+}
+footer .head .title{
+    font-size: 1.8rem;
+}
+
+.selectSec img{
+    height: 1rem;
+    vertical-align: middle;
+    margin: 1rem 0 ;
+}
+.selectSec select{
+    border:none;
+    background: #0000;
+    color: white;
 }
 
 
@@ -85,17 +138,20 @@ footer :first-child :first-child{
 }
 
 .container{
-    width:60%;
+    min-width:25rem;
+    width: 70%;
+    max-width: 84rem;
 }
 
-.padding-tb2-5{
-    padding: 2.5rem 0;
+.title{
+    font-size: 2.8rem;
+}
+.desc{
+    line-height: 1.5rem;
+    margin: 1.5rem 0;
 }
 
-.border{
-    border: 2px dashed;
-}
-
+/* float */
 .flright{
     float: right;
 }
@@ -103,6 +159,54 @@ footer :first-child :first-child{
     display: table;
     content: '';
     clear: both;
+}
+
+/* buttons */
+.button-container{
+    justify-content: space-between;
+}
+.button-container button{
+    font-size: 1rem;
+    padding:0.8rem 1.2rem;
+}
+/* standard = white button */
+button {
+    border: none;
+    border-radius: 50px;
+    padding:0.5rem 0.7rem;
+    margin: 1.5rem 0 0 2rem;
+    cursor: pointer;
+    color: black;
+    background-color: white;
+}
+button:hover{
+    background-color: #eee;
+}
+/* black button */
+.btnBlack{
+    color: white;
+    background-color: #23272a;
+}
+.btnBlack:hover{
+    background-color: #060708;
+}
+
+/* purple button */
+.btnPurple{
+    color: white;
+    background-color: #8ea1e1;
+
+}
+.btnPurple:hover{
+    background-color: #788ccc;
+}
+
+
+.dark{
+    background-color: #23272a;
+}
+.lightgray{
+    background-color: #f6f6f6;
 }
 
 /* colori da cancellare */
@@ -123,15 +227,6 @@ footer :first-child :first-child{
 }
 .white{
     background-color: white;
-}
-.dark{
-    background-color: #23272a;
-}
-.green{
-    background-color: #228b22;
-}
-.lightgray{
-    background-color: #d3d3d3;
 }
 .pink{
     background-color: #ee82ee;
