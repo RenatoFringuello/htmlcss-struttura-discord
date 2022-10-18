@@ -14,7 +14,12 @@ a{
 a:hover{
     color:#eee;
 }
-
+ul{
+    list-style-type: none;
+}
+ul > li{
+    margin-bottom: 0.8rem;
+}
 
 /* ------------------------------ HEADER ------------------------------ */
 header{
@@ -23,14 +28,9 @@ header{
     background-size: cover;
     background-position: center;
 }
-.header,
-.card{
-    padding:0.8rem 0;
-    font-size: 0.8rem;
-}
 .headerSec-item{
     flex-basis: 70%;
-    padding: 0.1rem 0.5rem;
+    padding: 1rem 0.5rem;
 }
 .headerSec-item:not(nav){
     flex-basis: 15%;
@@ -50,7 +50,7 @@ header nav a{
     margin: 2rem 0 0;
 }
 .intro .button-container button{
-    margin: 1.5rem 0 0 2rem;
+    margin-left: 2rem;
 }
 
 /* ------------------------------ MAIN ------------------------------ */
@@ -80,9 +80,7 @@ main > section:last-child .desc{
 .textSec .title{
     font-size: 2.5rem;
 }
-section.button-container button{
-    margin-top:1.5rem;
-}
+
 section.button-container h2{
     padding-top: 1rem;
     background:url('../img/stars.svg') no-repeat center;
@@ -92,36 +90,32 @@ section.button-container h2{
 /* ------------------------------ FOOTER ------------------------------ */
 footer{
     padding: 4rem 0 2.8rem;
+    background-color: #23272a;
 }
-footer .head{
-    width: 35%;
+/* footer-top */
+.footer-top{
+    padding-bottom: 0.8rem;
 }
-footer .head .title{
-    font-size: 1.8rem;
+.footer-top aside{
+    width: 30%;
 }
-footer .selectSec img{
+.footer-top .selectSec img{
     height: 1rem;
     vertical-align: middle;
     margin: 1rem 0 ;
 }
-footer .selectSec select{
+.footer-top .selectSec select{
     border:none;
     background: #0000;
     color: white;
     cursor: pointer;
 }
-
-footer .card{
-    width: 20%;
+.footer-top nav{
+    width: 70%;
 }
-footer .card div,
-footer h1{
-    color: #7188d8; 
+.footer-top nav .card{
+    width: 25%;
 }
-footer .card *{
-    margin-bottom:0.7rem;
-}
-
 .socialSec img{
     height: 1.2rem;
     vertical-align: middle;
@@ -130,26 +124,37 @@ footer .card *{
     margin-right: 1.5rem;
 }
 
-footer .signup{
+.footer-bottom{
     border-top: 1px solid #7188d888;
-    padding: 1.8rem 0;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+}
+.footer-bottom .logo{
+    height: 1.8rem;
 }
 
 /* ------------------------------ CLASSES ------------------------------ */
+.container{
+    min-width:25rem;
+    width: 70%;
+    max-width: 84rem;
+    margin: 0 auto;
+}
+
 /* flex */
 .flex{
     display: flex;
 }
-.flex-row{
-    flex-direction: row;
-}
 .flex-rowrev{
+    display: flex;
     flex-direction: row-reverse;
 }
 .flex-col{
+    display: flex;
     flex-direction: column;
 }
 .flex-center{
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -157,32 +162,24 @@ footer .signup{
     margin: auto;
 }
 
-.container{
-    min-width:25rem;
-    width: 70%;
-    max-width: 84rem;
-}
-
-img.logo{
-    padding:0;
-}
-
+/* text */
 .title{
     font-size: 2.8rem;
+}
+.subtitle{
+    font-size: 1.8rem;
 }
 .desc{
     line-height: 1.5rem;
     margin: 1.5rem 0;
 }
-
-/* float */
-.flright{
-    float: right;
+.small-links{
+    /* padding:0.8rem 0; */
+    font-size: 0.8rem;
 }
-.clearfix::after{
-    display: table;
-    content: '';
-    clear: both;
+.bold-purple{
+    color: #7188d8; 
+    font-weight: bolder;
 }
 
 /* buttons */
@@ -193,31 +190,35 @@ img.logo{
     font-size: 1rem;
     padding:0.8rem 1.2rem;
 }
-/* standard = white button */
+/* standard = black button */
+footer button,
+.header-top button{
+    margin: 0;
+}
 button {
     border: none;
     border-radius: 50px;
     padding:0.5rem 0.7rem;
-    
+    margin-top: 1.5rem;
     cursor: pointer;
-    color: black;
-    background-color: white;
-}
-button:hover{
-    background-color: #eee;
-}
-/* black button */
-.btnBlack{
     color: white;
     background-color: #23272a;
 }
-.btnBlack:hover{
+button:hover{
     background-color: #060708;
+}
+/* white button */
+.btnWhite{
+    color: black;
+    background-color: white;
+    
+}
+.btnWhite:hover{
+    background-color: #eee;
 }
 
 /* purple button */
 .btnPurple{
-    color: white;
     background-color: #8ea1e1;
 
 }
@@ -225,42 +226,6 @@ button:hover{
     background-color: #788ccc;
 }
 
-
-.dark{
-    background-color: #23272a;
-}
-.lightgray{
+.bg-lightgray{
     background-color: #f6f6f6;
-}
-
-/* colori da cancellare */
-.blue{
-    background-color: #00008b;
-}
-.lightblue{
-    background-color: #add8e6;
-}
-.lightpink{
-    background-color: #ffc0cb;
-}
-.orange{
-    background-color: #daa520;
-}
-.lightblue2{
-    background-color: #1e90ff;
-}
-.white{
-    background-color: white;
-}
-.pink{
-    background-color: #ee82ee;
-}
-.darkpink{
-    background-color: #f08080;
-}
-.darkcyan{
-    background-color: #20b2aa;
-}
-.aquamarine{
-    background-color: #7fffd4;
 }
