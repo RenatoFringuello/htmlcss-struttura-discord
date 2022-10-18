@@ -48,9 +48,11 @@ header nav a{
     background-size: cover;
     background-position: 0 -1.5rem;
 }
-.header-bottom > article{
+/* article#intro is the introduction in header-bottom */
+#intro{
     width: 38rem;
     text-align: center;
+    margin: auto;
 }
 .header-bottom p.desc{
     margin: 2rem 0;
@@ -60,9 +62,8 @@ header nav a{
 }
 
 /* ------------------------------ MAIN ------------------------------ */
-main > section,
-.header-bottom{
-    padding: 5rem 0 8rem;
+main > section:nth-child(even){
+    background-color: #f6f6f6;
 }
 main > section:last-child{
     text-align: center;
@@ -71,26 +72,24 @@ main > section:last-child .desc{
     width: 80%;
     margin: 1.5rem auto;
 }
+main .title{
+    font-size: 2.5rem;
+}
 
 .imgSec{
-    width: 71%;
+    width: 70%;
     text-align: center;
 }
 .imgSec img{
     width: 33rem;
 }
 .textSec{
-    width: 29%;
+    width: 30%;
     padding-top: 1.5rem;
-}
-.textSec .title{
-    font-size: 2.5rem;
 }
 
 section.button-container h2{
-    padding-top: 1rem;
-    background:url('../img/stars.svg') no-repeat center;
-    background-size: contain;
+    margin-bottom: 2rem;
 }
 
 /* ------------------------------ FOOTER ------------------------------ */
@@ -149,6 +148,9 @@ footer{
 .logo{
     height: 1.7rem;
 }
+.big-padding-tb{
+    padding: 5rem 0 8rem;
+}
 
 /* flex */
 .flex{
@@ -172,9 +174,6 @@ footer{
     justify-content: space-between;
     align-items: center;
 }
-.marginAuto{
-    margin: auto;
-}
 
 /* text */
 .title{
@@ -184,6 +183,7 @@ footer{
     font-size: 1.8rem;
 }
 .desc{
+    font-size: 1.05rem;
     line-height: 1.5rem;
     margin: 1.5rem 0;
 }
@@ -193,6 +193,11 @@ footer{
 .bold-purple{
     color: #7188d8; 
     font-weight: bolder;
+}
+.star-text{
+    padding-top: 1rem;
+    background:url('../img/stars.svg') no-repeat center;
+    background-size: contain;
 }
 
 /* BUTTON */
@@ -228,8 +233,4 @@ button:hover{
 }
 .btnPurple:hover{
     background-color: #788ccc;
-}
-
-.bg-lightgray{
-    background-color: #f6f6f6;
 }
