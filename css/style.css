@@ -68,6 +68,9 @@ main > section:nth-child(even){
 main > section:last-child{
     text-align: center;
 }
+main > section:last-child img{
+    width: 95%;
+}
 main > section:last-child .desc{
     width: 80%;
     margin: 1.5rem auto;
@@ -144,8 +147,21 @@ footer{
 .logo{
     height: 1.7rem;
 }
-.big-padding-tb{
-    padding: 5rem 0 8rem;
+.big-padding-top{
+    padding-top: 6rem;
+}
+.big-padding-bottom{
+    padding-bottom: 8rem;
+}
+.waves{
+    height: 5rem;
+    background: white url('../img/wave.svg') no-repeat;
+    background-size: cover;
+    mix-blend-mode: screen;
+    margin: 6.3rem 0;
+}
+.waves.head-down{
+    transform: rotate(180deg);
 }
 
 /* flex */
