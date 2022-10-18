@@ -18,7 +18,7 @@ ul{
     list-style-type: none;
 }
 ul > li{
-    margin-bottom: 0.8rem;
+    margin-top: 0.7rem;
 }
 
 /* ------------------------------ HEADER ------------------------------ */
@@ -75,7 +75,6 @@ main > section:last-child .desc{
 main .title{
     font-size: 2.5rem;
 }
-
 .imgSec{
     width: 70%;
     text-align: center;
@@ -86,6 +85,7 @@ main .title{
 .textSec{
     width: 30%;
     padding-top: 1.5rem;
+    font-size: 1.05rem;
 }
 
 section.button-container h2{
@@ -94,13 +94,10 @@ section.button-container h2{
 
 /* ------------------------------ FOOTER ------------------------------ */
 footer{
-    padding: 4rem 0 2.8rem;
+    padding: 4rem 0rem;
     background-color: #23272a;
 }
 /* footer top */
-.footer-top{
-    padding-bottom: 0.8rem;
-}
 .footer-top aside{
     flex-basis: 30%;
 }
@@ -126,16 +123,15 @@ footer{
 
 .footer-top nav{
     flex-basis: 70%;
-    padding-top: 0.5rem;
 }
 .footer-top nav .card{
     flex-basis: 25%;
 }
 
-/* footer bottom */
-.footer-bottom{
+/* footer divider */
+#separator{
     border-top: 1px solid #7188d888;
-    padding: 1.5rem 0;
+    margin: 1.5rem auto;
 }
 
 /* ------------------------------ CLASSES ------------------------------ */
@@ -183,7 +179,6 @@ footer{
     font-size: 1.8rem;
 }
 .desc{
-    font-size: 1.05rem;
     line-height: 1.5rem;
     margin: 1.5rem 0;
 }
